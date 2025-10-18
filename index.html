@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quà tặng 20/10 cho Mẹ 💝</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('https://i.imgur.com/N3iQ7VQ.jpg') no-repeat center center/cover;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+      animation: fadeIn 3s ease-in-out;
+    }
+    p {
+      width: 80%;
+      margin: 20px auto;
+      font-size: 1.2em;
+      line-height: 1.6;
+      animation: fadeIn 5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: floatUp 6s linear infinite;
+    }
+    .heart::before, .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { left: 10px; top: 0; }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Chúc mừng ngày Phụ Nữ Việt Nam 20/10 💖</h1>
+  <p>
+    Mẹ yêu dấu,<br><br>
+    Nhân ngày Phụ Nữ Việt Nam 20/10, con muốn gửi đến mẹ những lời yêu thương ngọt ngào nhất.<br>
+    Mẹ là bông hoa đẹp nhất trong đời con — dịu dàng, hiền hậu và luôn hy sinh thầm lặng.<br><br>
+    Con cảm ơn mẹ vì tất cả yêu thương và bao dung mẹ đã dành cho con.<br>
+    Chúc mẹ mãi mạnh khỏe, hạnh phúc và rạng rỡ như hoa mùa xuân!<br><br>
+    <b>Con yêu mẹ rất nhiều ❤️</b><br><br>
+    <i>— Con yêu mẹ, Tạ Nguyễn Tuấn Đạt</i>
+  </p>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3b905a0b14.mp3?filename=beautiful-piano-melody-ambient-background-music-10942.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (3 + Math.random() * 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 200);
+  </script>
+</body>
+</html>
