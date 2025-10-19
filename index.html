@@ -3,105 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 💐</title>
+  <title>Chúc mừng Ngày Phụ Nữ Việt Nam 20/10 💖</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      background-color: #ffd6e8;
-      overflow: hidden;
+      background-color: #f8b6c1;
+      font-family: "Segoe UI", sans-serif;
+      color: white;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: "Segoe UI", sans-serif;
       text-align: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
     }
-
+    .container {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
     h1 {
-      color: #d63384;
-      font-size: 2.4em;
+      font-size: 2em;
       margin-bottom: 20px;
-      text-shadow: 1px 1px 2px #fff;
     }
-
     p {
-      color: #5c0a32;
-      font-size: 1.3em;
-      max-width: 600px;
-      line-height: 1.6;
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-      animation-delay: 2s;
+      font-size: 1.2em;
+      line-height: 1.8em;
+      text-align: justify;
+      color: #fffafc;
     }
-
-    .hearts {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-    }
-
-    .heart {
-      position: absolute;
-      color: rgba(255, 105, 180, 0.8);
-      font-size: 24px;
-      animation: float 6s linear infinite;
-    }
-
-    @keyframes float {
-      from { transform: translateY(100vh) scale(1); opacity: 1; }
-      to { transform: translateY(-10vh) scale(1.3); opacity: 0; }
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    footer {
+    .signature {
       margin-top: 30px;
-      color: #7a003c;
-      font-weight: bold;
+      font-size: 1.2em;
+      font-style: italic;
+      text-align: right;
     }
   </style>
 </head>
 <body>
-  <div class="hearts"></div>
-
-  <h1>💖 Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 💖</h1>
-  <p id="message">
-    Mẹ yêu dấu của con,<br><br>
-    Nhân ngày 20/10, con chúc mẹ luôn mạnh khỏe, hạnh phúc và mãi luôn rạng rỡ như đóa hoa hồng nở trong tim con.  
-    Cảm ơn mẹ vì tất cả yêu thương, hi sinh và bao dung dành cho con.<br><br>
-    Con yêu mẹ rất nhiều! 💕
-  </p>
-
-  <footer>— Con trai của mẹ, <b>Tạ Nguyễn Tuấn Đạt</b> 💝</footer>
-
-  <audio id="bg-music" autoplay>
-    <source src="https://cdn.pixabay.com/download/audio/2023/03/10/audio_9e63b5e58e.mp3?filename=piano-soft-melody-14291.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    // Tạo hiệu ứng tim bay
-    const heartsContainer = document.querySelector('.hearts');
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.textContent = '💖';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = (4 + Math.random() * 4) + 's';
-      heartsContainer.appendChild(heart);
-      setTimeout(() => heart.remove(), 6000);
-    }
-    setInterval(createHeart, 400);
-
-    // Chạy nhạc 1 lần rồi dừng
-    const music = document.getElementById('bg-music');
-    music.volume = 0.4;
-  </script>
+  <div class="container">
+    <h1>💖 Chúc mừng Ngày Phụ Nữ Việt Nam 20/10 💖</h1>
+    <p><strong>Mẹ yêu dấu,</strong></p>
+    <p>
+      Nhân ngày <strong>Phụ Nữ Việt Nam 20/10</strong>, con muốn gửi đến mẹ ngàn lời yêu thương và biết ơn sâu sắc nhất.
+      Từ khi con còn nhỏ đến hôm nay, mẹ luôn là người âm thầm đứng sau, lặng lẽ hi sinh, luôn dành cho con những điều tốt đẹp nhất mà chẳng cần đáp lại điều gì.
+    </p>
+    <p>
+      Mẹ ơi, con biết có những lúc con làm mẹ buồn, làm mẹ lo… nhưng mẹ vẫn luôn bao dung, vẫn luôn dang rộng vòng tay ôm lấy con như ngày con còn thơ bé.
+      Mỗi nếp nhăn trên khuôn mặt mẹ là dấu vết của tháng năm, của tình yêu, của những đêm mẹ thức vì con.
+    </p>
+    <p>
+      Con chỉ mong rằng — dù thời gian có trôi nhanh đến đâu — mẹ vẫn luôn khỏe mạnh, vẫn luôn nở nụ cười hiền hậu, vẫn luôn bình yên trong vòng tay của gia đình.
+      Bởi với con, <strong>mẹ chính là món quà tuyệt vời nhất mà cuộc đời ban tặng.</strong>
+    </p>
+    <p>
+      Con yêu mẹ rất nhiều 💖  
+      Cảm ơn mẹ vì tất cả.  
+      Chúc mẹ mãi mãi hạnh phúc, xinh đẹp, và rạng rỡ như mùa xuân năm ấy 🌸
+    </p>
+    <div class="signature">— Tạ Nguyễn Tuấn Đạt 💌</div>
+  </div>
 </body>
 </html>
